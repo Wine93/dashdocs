@@ -11,7 +11,7 @@ function stk_top() { return (stk_size() > 0) ? stk_array[stk_pos] : "ERROR";  }
 function stk_size() { return stk_pos; }
 
 function ltrim(s) { sub(/^[ \t\r\n#]+/, "", s); return s }
-function rtrim(s) { sub(/[ \t\r\n#]+$/, "", s); return s }
+function rtrim(s) { sub(/[ \t\r\n]+$/, "", s); return s }
 function trim(s) { return rtrim(ltrim(s)); }
 
 function _block(token, sign) {
@@ -56,20 +56,17 @@ function _command(command, name, notes) {
         return
     }
 
-    command = trim(command)
-    name = trim(name)
-    notes = trim(notes)
-
     printf ("%*sentry do\n", shiftwidth-tabwidth, "")
-    printf ("%*std_command '%s'\n", shiftwidth, "", command)
-    printf ("%*sname '%s'\n", shiftwidth, "", _encode_name(name))
-    if (notes) printf ("%*std_notes '%s'\n", shiftwidth, "", _encode_name(notes))
+    printf ("%*std_command '%s'\n", shiftwidth, "", trim(command))
+    printf ("%*sname '%s'\n", shiftwidth, "", _encode_name(trim(name)))
+    if (notes) printf ("%*std_notes '%s'\n", shiftwidth, "", trim(notes))
     printf ("%*send\n", shiftwidth-tabwidth, "")
 }
 
 function parse_line(line) {
     if (!match(trim(line), REG_TOKEN, mu)) {
-        printf ("%*s%s\n", shiftwidth, "", trim(line))
+        line = trim(line)
+        printf ("%*s%s\n", line ? shiftwidth : 0, "", line)
 
     } else if (mu[1]) {
         _block(mu[2], mu[3])
