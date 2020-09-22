@@ -1,4 +1,5 @@
 # Copyright (C) Yuyang Chen (Wine93)
+# All to ruby
 
 # TODO:
 #   (1) index_name
