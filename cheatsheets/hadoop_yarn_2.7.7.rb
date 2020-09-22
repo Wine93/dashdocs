@@ -1,6 +1,6 @@
 cheatsheet do
   title 'Hadoop Yarn 2.7.7'
-  docset_file_name 'hadoop_yarn_2.7.7'
+  docset_file_name 'Hadoop_Yarn_2.7.7'
   keyword 'hadoop'
   source_url 'cheat.kapeli.com'
 

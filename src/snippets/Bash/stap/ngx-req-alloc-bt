@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-
-# __Author__: Copyright (C) Yuyang Chen (Wine93)
-# __Date__: 2018-12-18
-# __Describe__: The tool analyzes memory alloc backtrace for each request in specified nginx worker process                                               | [ngx-req-alloc-bt](Stap/ngx-req-alloc-bt)        |
+# Copyright (C) Yuyang Chen (Wine93)
 
 ############################  GLOBAL VARIABLES
 pid=0

@@ -1,6 +1,6 @@
 cheatsheet do
   title 'Hadoop Hdfs 2.7.7'
-  docset_file_name 'hadoop_hdfs_2.7.7'
+  docset_file_name 'Hadoop_Hdfs_2.7.7'
   keyword 'hadoop'
   source_url 'cheat.kapeli.com'
 

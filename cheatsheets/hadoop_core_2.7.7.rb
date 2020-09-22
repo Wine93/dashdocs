@@ -1,7 +1,7 @@
 cheatsheet do
   title 'Hadoop Core 2.7.7'
-  docset_file_name 'hadoop_core_2.7.7'
-  keyword 'hadoop'
+  docset_file_name 'Hadoop_Core_2.7.7'
+  keyword 'Hadoop'
   source_url 'cheat.kapeli.com'
 
   category do

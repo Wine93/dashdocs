@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-
-# __Author__: Copyright (C) Yuyang Chen (Wine93)
-# __Date__: 2020-08
-# __Describe__: A script to init and start elasticsearch
+# Copyright (C) Yuyang Chen (Wine93)
 
 ###########################  GLOBAL VARIABLES
 os=`uname -s`

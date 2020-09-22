@@ -11,6 +11,6 @@ My personal dash documents:
 * Step 2: Use cheatset to generate dash document, e.g.:
 
 ```bash
-> cheatset generate hadoop/dsl/hadoop_core_2.7.7.rb
-> open hadoop_core_2.7.7.docset
+> cheatset generate cheatsheets/Hadoop_Core_2.7.7.rb
+> open Hadoop_Core_2.7.7.docset
 ```
