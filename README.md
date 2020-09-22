@@ -2,8 +2,7 @@
 
 My personal dash documents:
 
-* hadoop: Hadoop official document (core, hdfs, yarn).
-* snippets: Code snippets for myself.
+* Snippets: Code snippets for myself.
 
 ## Usage
 
